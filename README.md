@@ -16,8 +16,10 @@ Transform UECFOOD dataset like COCO dataset structure
 ### positional arguments:
   `{UECFOOD256,UECFOOD100}`: Choose UECFOOD256 or UECFOOD100, now support only UECFOOD256
 
-optional arguments:
+### optional arguments:
 
+|Header|Description|
+|:---:|---|
 |-h, --help|show this help message and exit|
 |--path PATH, -p PATH|Path of target dataset|
 |--dest DEST, -d DEST|Where you make coco dataset|
