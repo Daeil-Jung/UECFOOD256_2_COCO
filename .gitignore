@@ -1,2 +1,5 @@
 # Default ignored files
 .idea
+venv
+dataset256
+uecfood256_coco
