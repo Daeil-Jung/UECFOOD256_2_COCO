@@ -13,22 +13,23 @@ uecfood256_2_coco.py [-h] [--path PATH] [--dest DEST] {UECFOOD256,UECFOOD100}
 
 Transform UECFOOD dataset like COCO dataset structure
 
-positional arguments:
-  {UECFOOD256,UECFOOD100}
-                        Choose UECFOOD256 or UECFOOD100, now support only UECFOOD256
+### positional arguments:
+  `{UECFOOD256,UECFOOD100}`: Choose UECFOOD256 or UECFOOD100, now support only UECFOOD256
 
 optional arguments:
-  -h, --help            show this help message and exit
-  --path PATH, -p PATH  Path of target dataset
-  --dest DEST, -d DEST  Where you make coco dataset
+
+|-h, --help|show this help message and exit|
+|--path PATH, -p PATH|Path of target dataset|
+|--dest DEST, -d DEST|Where you make coco dataset|
 
 # Default tree structure 
 ```bash
+├UECFOOD256_2_COCO
 ├─dataset256
 │  └─UECFOOD256
 │      ├─1
 │      ├─10
 │      ├─100
 │      ├─ ...
-├─uecfood256_coco
+├─uecfood256_2_coco.py
 ```
