@@ -2,4 +2,6 @@
 .idea
 venv
 dataset256
+uecfood_split
 uecfood256_coco
+dataset100

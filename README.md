@@ -23,7 +23,7 @@ In split information,
 git clone https://github.com/Daeil-Jung/UECFOOD256_2_COCO
 pip install pillow
 cd UECFOOD256_2_COCO
-uecfood256_2_coco.py UECFOOD256
+python uecfood256_2_coco.py UECFOOD256
 ```
 
 # How to use
