@@ -39,7 +39,8 @@ def img_n_anno_proc(data_list):
                 annotations.append(
                     {"id": anno_id, "bbox": [int(x1), int(y1), (int(x2) - int(x1)), (int(y2) - int(y1))],
                      "image_id": int(img),
-                     "segmentation": [], "ignore": 0, "iscrowd": 0, "category_id": cat_id, "area": 0})
+                     "segmentation": [[int(x1), int(y1), int(x2), int(y1), int(x2), int(y2), int(x1), int(y2)]],
+                     "ignore": 0, "iscrowd": 0, "category_id": int(cat_id), "area": (int(x2) - int(x1)) * (int(y2) - int(y1))})
                 anno_id += 1
 
     return images, annotations
