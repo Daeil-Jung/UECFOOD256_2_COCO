@@ -1,10 +1,9 @@
 # Introduce
- UECFOOD256 dataset to COCO dataset structure. 
+ UEC FOOD dataset to COCO dataset structure. 
 
 # Dataset download
 ### UECFOOD101 download
-**Currently not supported by my project.**  
-~~[http://foodcam.mobi/dataset100.html](http://foodcam.mobi/dataset100.html)~~
+[http://foodcam.mobi/dataset100.html](http://foodcam.mobi/dataset100.html)
 ### UECFOOD256 download
 [http://foodcam.mobi/dataset256.html](http://foodcam.mobi/dataset256.html)  
 ### Split information
@@ -20,34 +19,34 @@ In split information,
 
 # Installation and example usage
 ```bash
-git clone https://github.com/Daeil-Jung/UECFOOD256_2_COCO
+git clone https://github.com/Daeil-Jung/UECFOOD_2_COCO
 pip install pillow
-cd UECFOOD256_2_COCO
-python uecfood256_2_coco.py UECFOOD256
+cd UECFOOD_2_COCO
+python uecfood_2_coco.py UECFOOD256 # or UECFOOD100
 ```
 
 # How to use
 ```bash
-uecfood256_2_coco.py [-h] [--path PATH] [--dest DEST] {UECFOOD256,UECFOOD100}
+python uecfood_2_coco.py [-h] [--path PATH] [--dest DEST] {UECFOOD256,UECFOOD100}
 ```
 
-Transform UECFOOD dataset like COCO dataset structure
+Transform UEC FOOD dataset like COCO dataset structure
 
 ### positional arguments:
-  `{UECFOOD256,UECFOOD100}`: Choose UECFOOD256 or UECFOOD100, now support only UECFOOD256
+  `{UECFOOD256,UECFOOD100}`: Choose UECFOOD256 or UECFOOD100
 
 ### optional arguments:
 
 |Header|Description|
 |:---:|---|
-|-h, --help|show this help message and exit|
+|-h, --help|Show this help message and exit|
 |--path PATH, -p PATH|Path of target dataset|
 |--dest DEST, -d DEST|Where you make coco dataset|
 
 # Default tree structure 
 ```bash
-├UECFOOD256_2_COCO
-├─dataset256
+├UECFOOD_2_COCO
+├─dataset256 # or dataset100
 │  └─UECFOOD256
 │      ├─1.jpg
 │      ├─10.jpg
@@ -61,12 +60,12 @@ Transform UECFOOD dataset like COCO dataset structure
 │      ├─val2.txt
 │      ├─val3.txt
 │      ├─val4.txt
-├─uecfood256_2_coco.py
+├─uecfood_2_coco.py
 ```
 
 # Output
 ```bash
-├uecfood256_coco
+├uecfood256_coco # or uecfood100_coco
 ├─classes.txt
 ├─*.jpg
 ├─annotations
@@ -74,6 +73,3 @@ Transform UECFOOD dataset like COCO dataset structure
 │  ├─test_anno.json
 │  └─valid_anno.json
 ```
-
-# To-do list
-- Expand the contents to be applicable to UECFOOD101 dataset
